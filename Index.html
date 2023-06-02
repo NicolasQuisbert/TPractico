@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2da parte</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="javascript.js">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="row bg-black bg-opacity-75 text-light p-2 ">
+        <!-- icono y texto -->
+        <div class="col-3 d-flex align-items-center text-center">
+            <img src="IMAGENES/codoacodo.png" alt="c" width="130" height="70">
+            <span class="fs-5 ">Conf BsAs</span>
+        </div>
+
+        <!-- opciones de menú -->
+
+        <div class="col-9 d-flex justify-content-around fs-6">
+            <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+                <div class="container-fluid ">
+                    <a class="navbar-brand " href="#"></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item ">
+                                <a class="nav-link active text-light" aria-current="page" href="#La conferencia">La
+                                    conferencia</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-white-50" href="#Los oradores">Los oradores</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-white-50 text-fluid" href="#lugar y fecha">El lugar y la
+                                    fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white-50" href="#Conviértete en orador">Conviértete en
+                                    orador</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-success" href="#">Comprar Tickets</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="pt-4 d-sm-flex justify-content-md-center align-items-start">
+        <div class="d-sm-flex  justify-content-md-center align-items-start">
+            <div class="card p-1 border-primary rounded-0">
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center py-1">Estudiante</h5>
+                    <h6 class="card-subtitle fw-normal d-flex justify-content-center py-2">Tienen un descuento</h6>
+                    <p class="card-text fw-bold d-flex justify-content-center">80%</p>
+                    <small class="card-text fw-light d-flex justify-content-center ">*presentar documentación</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-sm-flex px-1 justify-content-md-center align-items-start">
+            <div class="card p-1 border-secondary rounded-0">
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center py-1">Traine</h5>
+                    <h6 class="card-subtitle fw-normal d-flex justify-content-center py-2">Tienen un descuento</h6>
+                    <p class="card-text fw-bold d-flex justify-content-center">50%</p>
+                    <small class="card-text fw-light d-flex justify-content-center ">*presentar documentación</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-sm-flex  justify-content-md-center align-items-start">
+            <div class="card p-1 border-warning rounded-0">
+                <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center py-1">Junior</h5>
+                    <h6 class="card-subtitle fw-normal d-flex justify-content-center py-2">Tienen un descuento</h6>
+                    <p class="card-text fw-bold d-flex justify-content-center">15%</p>
+                    <small class="card-text fw-light d-flex justify-content-center ">*presentar documentación</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column">
+            <div class="d-flex justify-content-center">VENTA</div>
+            <div class="d-flex justify-content-center align-items-start fs-2 fw-semibold ">VALOR DE TICKET 200$</div>
+        </div>
+    </div>
+
+    <!-- formulario-->
+    <div class="container">
+        <form action="#" method="post" onreset="Borrar()">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 mb-3">
+                    <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <input type="text" name="apellido" id="apellido" class="form-control" required
+                        placeholder="Apellido">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 mb-3">
+                    <input type="email" name="email" id="email" class="form-control" required placeholder="email">
+                </div>
+            </div>
+
+            <!-- calculo de tickets-->
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">Cantidad</label>
+                    <input type="number" name="cantEntradas" id="cantEntradas" min="0" class="form-control" required
+                        placeholder="Cantidad">
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="porDescuento" class="form-label">Categoría</label>
+                    <select class="form-select" id="porDescuento">
+                        <option value="80">Estudiante</option>
+                        <option value="50">Traine</option>
+                        <option value="15">Junior</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 py-4">
+                    <div class="input-group">
+                        <span class="input-group-text form-label d-flex align-items-start" id="totalpagar">Total a
+                            pagar:$</span>
+                        <input type="text" id="totalPagar2" class="form-control" aria-label="Monto">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="d-grid gap-2 col-md-3 mb-3">
+                    <input type="reset" value="Borrar" class="btn btn-success">
+                </div>
+                <div class="d-grid gap-2 col-md-3 mb-3">
+                    <input type="submit" value="Resumen" id="Resumen" class="btn btn-success">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="container-fluid py-2 Footer bg-black bg-opacity-75">
+        <div class="row px-5 mx-5">
+            <nav class="nav d-flex flex-md-column align-items-center text-decoration-none">
+                <div class="d-md-flex justify-content-sm-start justify-content-md-around">
+                    <a class="col-1 nav-link link-light" href="#">Preguntas frecuentes</a>
+                    <a class="col-1 nav-link link-light" href="#">Contáctanos</a>
+                    <a class="col-1 nav-link link-light" href="#">Prensa</a>
+                    <a class="col-1 nav-link link-light" href="#">Conferencias</a>
+                    <a class="col-2 nav-link link-light text-center" href="#">Términos y condiciones</a>
+                    <a class="col-1 nav-link link-light" href="#">Privacidad</a>
+                    <a class="col-1 nav-link link-light" href="#">Estudiantes</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
